@@ -27,6 +27,13 @@ function show(){
 }
 show();
     
-console.log(functionVar); // Throws ReferenceError
-console.log(functionLet); // Throws ReferenceError
-console.log(functionConst); // Throws ReferenceError
+
+{
+    var varTest = "test var";
+    let letTest = "test let";
+    const constTest = "test const";
+}
+
+varTest = "reassign var";
+    letTest = "reassign let";
+    constTest = "reassign const";
